@@ -1,0 +1,34 @@
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+<title>温馨提示</title>
+<script src="js/mui.min.js"></script>
+<link href="css/mui.min.css" rel="stylesheet"/>
+<style>
+*{ margin:0; padding:0; font-family:微软雅黑;}
+.content{ width:80%; height:auto; border:1px solid #EEEEEE; box-sizing:border-box; box-shadow:3px 3px 5px #333333; line-height:30px; padding:1%; position:absolute; top:25%; left:10%;}
+h1{ margin:0 auto; text-align:center; font-size:16px; font-family:微软雅黑; color:orange;}
+.login{ margin:0 auto; text-align:center; line-height:30px;}
+.btn{ width:50px; height:30px; background:green; color:white; border:none;}
+.mui-btn{color: #FFA500;border: 1px solid #FFA500;width: 80px;margin-top: 10px;margin-bottom: 5px;}
+</style>
+
+ <script  type="text/javascript">
+//跳转一个activity界面
+	function htmlJsGotoActivity(activityName){
+		//activityName 是要跳转的界面的全名称
+		window.androidJsStub.gotoActivity(activityName);
+	}
+ </script>
+
+</head>
+
+<body>
+<div class="content">
+	<h1>温馨提示</h1><hr color="orange" style="margin:10px 0;">
+    <div class="login">
+    	<p align="center" style="color:orange;">请使用移动沈农打开，或者您使用的移动沈农版本过低，请升级！</p>
+        <button type="button" onclick="htmlJsGotoActivity('com.autism.syauplatform.activity.VersionActivity')" class="mui-btn mui-btn-outlined">升 级</button>
+    </div>
+</div>
+</body>
+</html>
